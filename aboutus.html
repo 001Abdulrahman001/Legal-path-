@@ -1,0 +1,282 @@
+<html>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .ham {
+  width: 40px;
+  height: 40px;
+  background: #1c5e20;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+  position: fixed;
+  top: 15px;
+  right: 20px;
+}
+
+.line1, .line2, .line3{
+  background: white;
+  border-radius: 3px;
+  width: 25px;
+  height: 3px;
+  margin: 2px;
+}
+
+.active .line1{
+  transform: rotate(-45deg) translate(-5px, 5px);
+
+}
+.active .line2 {
+  opacity: 0;
+}
+
+.active .line3 {
+  transform: rotate(45deg) translate(-5px, -5px);
+}
+
+.link{    
+  left: 0%;
+}
+
+nav ul {
+  left: -70%;
+  position: fixed;
+  height: 100vh;
+  width: 50%;
+  margin: 0;
+  background: #1c5e20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+ul h1 {
+  color: #fff;
+}
+
+ul li{
+    font-weight: bold;
+    font-family: Comic Sans MS;
+  text-align:center;
+  padding:15px 0;
+  width: 100%;
+}
+
+ul li:hover{
+  background:#26A69A;
+  padding-left: 7%;
+  width:93%; 
+}
+
+li a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.text{
+  padding:1px 10px 1px 10px;
+  color:#fff;
+}
+    .container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+     #seeMoreBtn {
+         display: block;
+         margin-left: 10px;
+         margin-bottom: 10px;
+         background-color:  #1c5e20;
+         color: #fff;
+         border: none;
+         padding: 10px 20px;
+         border-radius: 5px;
+         cursor: pointer;
+        }
+          #seeMoreBtn:hover{
+         background-color: white;
+         border: 2px solid #1c5e20;
+         color: #1c5e20;    
+        }
+     .footer{
+         width: viewport-width;
+         height: 800px;
+         background-color: #329336;
+         color: white;
+         padding: 10px;
+         
+     }   
+     span{
+         color: black;
+         font-weight: bold;
+     }
+     p{
+         margin-bottom: 70px;
+     }
+     .header{
+         height: 70px;
+         width: 100%;
+         background-color: white;
+         position: fixed;
+         border-bottom: 3px solid #1c5e20;
+     }
+          .text{
+         margin-bottom: 5px;
+         padding-top: 80px;
+         padding-left: 10px;
+         padding-right: 10px;
+         font-size: 17px;
+         color: #3F4539;
+         
+     }
+     .end{
+         height: 80px;
+         width: 100%;
+         background-color: #1c5e20;
+         color: black;
+         text-align: center;
+        
+         
+     }
+     .logo{
+         padding: 10px;
+         height: 50px;
+         width: 50px;
+     }
+     b{
+         color: #1c5e20;
+         margin-top: 100px;
+         font-family: Sans-Serif;
+         font-size: 30px;
+         padding: 15px;
+     }
+     button{
+         font-size: 11px;
+         font-weight: bold;
+         margin-top: 10px;
+         height: 40px;
+         width: 140px;
+         border: none;
+         border-radius: 5px;
+         background-color: #1c5e20;
+         color: white;
+     }
+     
+     .name{
+         height: 300px;
+         width: 300px;
+         border: 4px solid #1c5e20;
+         margin: 15px;
+     }
+     .nn{
+         display: flex;
+         overflow: scroll;
+     }
+     .contact{
+         height: 20px;
+         width: 20px;
+         margin: 5px;
+     }
+     .head{
+         width: 100%;
+         margin-bottom: 10px;
+     }
+     .text{
+         line-height: 1.5;
+         font-size: 17px;
+     }
+     
+    </style>
+    </head>
+    <div class="header">
+          <nav>
+    <ul id="ul">
+      <h1>MENU</h1><br>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="aboutus.html">ABOUT US</a></li>
+      <li><a href="contactus.html">CONTACT US</a></li>
+    </ul>
+  </nav>
+  
+    <div id="hamMenu" class="ham" onclick="hamMenuClick()">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+        <img src="logo.png" class="logo" />
+    </div>
+    
+        <p class="text">
+
+            <b>About Us</b><br />
+            Welcome to Legal Path, where we believe that every client deserves exceptional legal representation. Our team of experienced attorneys is dedicated to providing personalized and effective legal solutions to individuals and businesses in Nigeria.<br />
+<br />
+At Legal Path, we understand that navigating the legal system can be overwhelming and intimidating. That's why we take the time to listen to our clients and work closely with them to achieve their goals. Our attorneys have years of experience handling a wide range of legal matters, including Auto Accidents, Child Abuse, and Finance Law and more.<br />
+<br />
+Our commitment to excellence extends beyond the courtroom. We pride ourselves on our responsiveness, communication, and accessibility. Clients can expect timely updates on their cases, clear and concise explanations of legal terms and processes, and direct access to their attorneys when they need it most.<br />
+<br />
+In addition to our legal expertise, we also believe in giving back to the community.Legal Path is actively involved in Community development initiatives, and we support various charitable organizations throughout Nigeria.<br />
+<br />
+If you're facing a legal challenge, trust the experienced attorneys at [Law Firm Name] to fight for your rights and protect your interests. Contact us today for a consultation.<br />
+            <a href="appointment.html"><button>Make An Appointment</button></a>
+    </p>
+
+    <div class="footer">
+        <p> <span>Address</span><br />
+Head Office Contact
+<br /> 40, Absi Estate, Kuje
+P. O. Box 56161 <br />
+Pasali 903101 <br />
+Abuja, Nigeria. </p>
+
+<p> <span>Telephone</span> <br />
++234  807 699 2876<br />
++234 803 467 2078<br />
++234 812 639 4471 <br />
+</p>
+
+<p> <span>Email</span> <br />
+admin@legalpath.com <br />
+legalpath@gmail.com <br />
+</p>
+
+<p> <span>Business Hours </span><br />
+Monday-Friday: 8am to 6pm <br />
+Saturday: Closed <br />
+Sunday: Closed <br />
+</p>
+
+<p> Our support hotline is available 24 hours everyday @ +234 (0) 803 467 2078
+</p>
+    </div>
+    <div class="end">
+        Copyright Legal Path Law Firm. All Rights Reserved.
+        <div class="social">
+    <a href="https://wa.me/2348034672078"><img src="whatsapp.png" class="contact"/></a>
+    <img src="twitter.png" class="contact"/>
+    <img src="instagram.png" class="contact"/>
+        <a href="https://www.facebook.com/odua.abdulfatah"><img src="facebook.png" class="contact"/></a>
+        <img src="linkedin.png" class="contact"/>
+    </div>
+    </div>
+      <script>
+    function hamMenuClick()
+{
+  document.getElementById("hamMenu").classList.toggle("active");
+  document.getElementById("ul").classList.toggle("link");
+}
+  </script>
+</html>

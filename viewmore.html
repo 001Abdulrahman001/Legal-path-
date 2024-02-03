@@ -1,0 +1,332 @@
+<html>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .ham {
+  width: 40px;
+  height: 40px;
+  background: #1c5e20;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+  position: fixed;
+  top: 15px;
+  right: 20px;
+}
+
+.line1, .line2, .line3{
+  background: white;
+  border-radius: 3px;
+  width: 25px;
+  height: 3px;
+  margin: 2px;
+}
+
+.active .line1{
+  transform: rotate(-45deg) translate(-5px, 5px);
+
+}
+.active .line2 {
+  opacity: 0;
+}
+
+.active .line3 {
+  transform: rotate(45deg) translate(-5px, -5px);
+}
+
+.link{    
+  left: 0%;
+}
+
+nav ul {
+  left: -70%;
+  position: fixed;
+  height: 100vh;
+  width: 50%;
+  margin: 0;
+  background: #1c5e20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+ul h1 {
+  color: #fff;
+}
+
+ul li{
+    font-weight: bold;
+    font-family: Comic Sans MS;
+  text-align:center;
+  padding:15px 0;
+  width: 100%;
+}
+
+ul li:hover{
+  background:#26A69A;
+  padding-left: 7%;
+  width:93%; 
+}
+
+li a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.text{
+  padding:1px 10px 1px 10px;
+  color:#fff;
+}
+    .container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+     #seeMoreBtn {
+         display: block;
+         margin-left: 10px;
+         margin-bottom: 10px;
+         background-color:  #1c5e20;
+         color: #fff;
+         border: none;
+         padding: 10px 20px;
+         border-radius: 5px;
+         cursor: pointer;
+        }
+          #seeMoreBtn:hover{
+         background-color: white;
+         border: 2px solid #1c5e20;
+         color: #1c5e20;    
+        }
+     .footer{
+         width: viewport-width;
+         height: 800px;
+         background-color: #329336;
+         color: white;
+         padding: 10px;
+         
+     }   
+     span{
+         color: black;
+         font-weight: bold;
+     }
+     p{
+         margin-bottom: 70px;
+     }
+     .header{
+         height: 70px;
+         width: 100%;
+         background-color: white;
+         position: fixed;
+         border-bottom: 3px solid #1c5e20;
+     }
+          .text{
+         margin-bottom: 5px;
+         padding-top: 80px;
+         padding-left: 10px;
+         padding-right: 10px;
+         font-size: 17px;
+         color: #3F4539;
+         
+     }
+     .end{
+         height: 80px;
+         width: 100%;
+         background-color: #1c5e20;
+         color: black;
+         text-align: center;
+        
+         
+     }
+     .logo{
+         padding: 10px;
+         height: 50px;
+         width: 50px;
+     }
+     b{
+         color: #1c5e20;
+         margin-top: 100px;
+         font-family: Sans-Serif;
+         font-size: 20px;
+         padding: 5px;
+     }
+     button{
+         font-size: 11px;
+         font-weight: bold;
+         margin-top: 10px;
+         height: 40px;
+         width: 140px;
+         border: none;
+         border-radius: 5px;
+         background-color: #1c5e20;
+         color: white;
+     }
+     
+     .name{
+         height: 300px;
+         width: 300px;
+         border: 4px solid #1c5e20;
+         margin: 15px;
+     }
+     .nn{
+         display: flex;
+         overflow: scroll;
+     }
+     .contact{
+         height: 20px;
+         width: 20px;
+         margin: 5px;
+     }
+     .head{
+         width: 100%;
+         margin-bottom: 10px;
+     }
+     .text{
+         line-height: 1.5;
+         font-size: 17px;
+     }
+     
+    </style>
+        </head>
+    <div class="header">
+          <nav>
+    <ul id="ul">
+      <h1>MENU</h1><br>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="aboutus.html">ABOUT US</a></li>
+      <li><a href="contactus.html">CONTACT US</a></li>
+    </ul>
+  </nav>
+  
+    <div id="hamMenu" class="ham" onclick="hamMenuClick()">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+        <img src="logo.png" class="logo" />
+    </div>
+    
+        <p class="text">
+
+ <b>Personal Injury:</b>
+            Representing individuals who have been injured due to the negligence of others, including car accidents, slip and falls, and medical malpractice.
+  <br />
+        <b>Family Law:</b>
+            Handling legal matters related to divorce, child custody, adoption, and domestic violence issues.
+<br />
+        <b>Criminal Defense:</b>
+            Defending individuals charged with crimes ranging from misdemeanors to felonies in both state and federal courts.
+<br />
+        <b>Real Estate Law:</b>
+            Assisting clients with property transactions, landlord-tenant disputes, zoning issues, and property development.
+<br />
+        <b>Business Law:</b>
+            Providing legal advice and representation to businesses in matters such as contracts, corporate formation, mergers and acquisitions, and intellectual property.
+<br />
+        <b>Employment Law:</b>
+            Advising employers and employees on issues like wrongful termination, discrimination, harassment, and wage disputes.
+<br />
+        <b>Immigration Law:</b>
+            Helping individuals navigate the complex process of obtaining visas, green cards, citizenship, and handling deportation proceedings.
+<br />
+        <b>Estate Planning:</b>
+            Assisting clients with drafting wills, trusts, and powers of attorney to ensure their assets are distributed according to their wishes upon death.
+<br />
+        <b>Bankruptcy Law:</b>
+            Guiding individuals and businesses through the process of filing for bankruptcy and restructuring debts.
+<br />
+        <b>Intellectual Property Law:</b>
+            Protecting clients' intellectual property rights through patents, trademarks, copyrights, and trade secrets.
+<br />
+        <b>Environmental Law:</b>
+            Addressing legal issues related to environmental regulations, pollution, land use, and natural resource management.
+<br />
+        <b>Healthcare Law:</b>
+            Advising healthcare providers, institutions, and patients on compliance, regulatory matters, and medical malpractice claims.
+<br />
+        <b>Tax Law:</b>
+            Assisting individuals and businesses with tax planning, compliance, audits, and resolving disputes with tax authorities.
+<br />
+        <b>Insurance Law:</b>
+            Representing policyholders in disputes with insurance companies over coverage, claims, and bad faith practices.
+<br />
+        <b>Civil Litigation:</b> 
+            Handling disputes between individuals, businesses, or government entities through negotiation, mediation, arbitration, and trial.
+<br />
+        <b>International Law:</b>
+            Addressing legal issues that involve multiple jurisdictions, cross-border transactions, and international disputes.
+<br />
+        <b>Privacy Law:</b>
+            Advising clients on data protection, privacy policies, GDPR compliance, and cybersecurity matters.
+<br />
+        <b>Sports and Entertainment Law:</b>
+            Representing athletes, artists, entertainers, and media companies in contract negotiations, licensing agreements, and intellectual property issues.
+<br />
+        <b>Consumer Protection Law:</b>     
+            Advocating for consumers who have been harmed by unfair business practices, product defects, or deceptive advertising.
+<br />
+        <b>Education Law:</b>
+        Assisting students, parents, and educational institutions with issues related to special education, student rights, and disciplinary actions.
+        <br />
+            <a href="appointment.html"><button>Make An Appointment</button></a>
+    </p>
+
+    <div class="footer">
+        <p> <span>Address</span><br />
+Head Office Contact
+<br /> 40, Absi Estate, Kuje
+P. O. Box 56161 <br />
+Pasali 903101 <br />
+Abuja, Nigeria. </p>
+
+<p> <span>Telephone</span> <br />
++234  807 699 2876<br />
++234 803 467 2078<br />
++234 812 639 4471 <br />
+</p>
+
+<p> <span>Email</span> <br />
+admin@legalpath.com <br />
+legalpath@gmail.com <br />
+</p>
+
+<p> <span>Business Hours </span><br />
+Monday-Friday: 8am to 6pm <br />
+Saturday: Closed <br />
+Sunday: Closed <br />
+</p>
+
+<p> Our support hotline is available 24 hours everyday @ +234 (0) 803 467 2078
+</p>
+    </div>
+    <div class="end">
+        Copyright Legal Path Law Firm. All Rights Reserved.
+        <div class="social">
+    <a href="https://wa.me/2348034672078"><img src="whatsapp.png" class="contact"/></a>
+    <img src="twitter.png" class="contact"/>
+    <img src="instagram.png" class="contact"/>
+        <a href="https://www.facebook.com/odua.abdulfatah"><img src="facebook.png" class="contact"/></a>
+        <img src="linkedin.png" class="contact"/>
+    </div>
+    </div>
+      <script>
+    function hamMenuClick()
+{
+  document.getElementById("hamMenu").classList.toggle("active");
+  document.getElementById("ul").classList.toggle("link");
+}
+  </script>
+</html>
